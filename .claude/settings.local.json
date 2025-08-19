@@ -1,0 +1,61 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__*",
+      "Bash(*)",
+      "Edit(*)",
+      "Glob",
+      "Grep(*)",
+      "LS", 
+      "MultiEdit",
+      "Read(*)",
+      "Task",
+      "TodoRead",
+      "TodoWrite",
+      "Write(*)",
+      "WebFetch(domain:cloud.google.com)",
+      "WebFetch(domain:firebase.google.com)",
+      "WebFetch(domain:developers.google.com)",
+      "WebFetch(domain:ai.google.dev)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docs.anthropic.com)",
+      "WebSearch",
+      "Bash(gcloud:*)",
+      "Bash(kubectl:*)",
+      "Bash(docker:*)",
+      "Bash(terraform:*)",
+      "Bash(npm:*)",
+      "Bash(pip:*)",
+      "Bash(go:*)",
+      "Bash(python:*)",
+      "Bash(python3:*)",
+      "Bash(pytest:*)",
+      "Bash(git:*)",
+      "Bash(curl:*)",
+      "Bash(mkdir:*)",
+      "Bash(cp:*)",
+      "Bash(mv:*)",
+      "Bash(rm:*)",
+      "Bash(chmod:*)",
+      "Bash(cat:*)",
+      "Bash(head:*)",
+      "Bash(tail:*)",
+      "Bash(grep:*)",
+      "Bash(find:*)",
+      "Bash(jq:*)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(sudo rm -rf *)",
+      "Bash(format *)"
+    ],
+    "ask": [],
+    "defaultMode": "bypassPermissions"
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "MCP_DOCKER",
+    "github", 
+    "filesystem"
+  ]
+}
